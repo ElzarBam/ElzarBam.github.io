@@ -1,0 +1,123 @@
+body {
+  margin: 0;
+}
+
+header {
+  background-color: green;
+  padding-top: .5em;
+  padding-bottom: .5em;
+  margin: 0;
+  color: white;
+  font-size: 2em;
+}
+
+#title-div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.buttons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.buttons div {
+  margin: 2em;
+}
+
+.buttons div button {
+  padding: 1em;
+}
+
+#viewRecipePage {
+  background-color: tan;
+  height: 100%;
+  width: 100vw;
+  margin-left: -100vw;
+  position: absolute;
+  margin-top: -13.8em;
+  -webkit-transition: .5s;
+  transition: .5s;
+  -webkit-transition-timing-function: linear;
+          transition-timing-function: linear;
+}
+
+#addRecipePage {
+  height: 100%;
+  width: 100vw;
+  margin-left: 100vw;
+  position: absolute;
+  margin-top: -13.8em;
+  -webkit-transition: .5s;
+  transition: .5s;
+  -webkit-transition-timing-function: linear;
+          transition-timing-function: linear;
+  display: none;
+}
+
+form {
+  margin-top: 1em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+form div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+form div button {
+  margin: .5em;
+}
+
+textarea {
+  width: 80%;
+  height: 5em;
+}
+
+#description {
+  width: 80%;
+  height: 2.5em;
+}
+
+#ingredients_div {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+#ingredients_div input {
+  margin-bottom: 1.5em;
+}
+
+#course_selection input {
+  margin-left: 1em;
+}
+
+#addRecipeTags {
+  width: 80%;
+  height: 2.5em;
+}
+/*# sourceMappingURL=index.css.map */

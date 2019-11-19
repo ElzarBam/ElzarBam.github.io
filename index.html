@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="en-us">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="description" content="Recipes">
+        <!-- 
+            The user-scalable=no prevents the page from being zoomed on mobile, 
+            and prevents the random zoomout from the cancel button on the addrecipe
+            page
+        -->
+        <meta name="viewport" content="width=device-width, user-scalable=no" >
+        <link rel="stylesheet" type="text/css" href="index.css">
+    </head>
+    
+    <body>
+
+        <header>
+
+            <div id="title-div">
+                <div id="title">
+                    Recipes
+                </div>
+            </div>
+
+        </header>
+
+        <main>
+
+            <!-- Buttons here for options -->
+            <div class="buttons">
+
+                <div><button id="view_recipes">View Recipes</button></div>
+                <div><button id="add_recipes">Add Recipe</button></div>
+
+            </div>
+
+            <!-- Page for view recipes -->
+            <div id="viewRecipePage">
+                <div class="buttons">
+                    <p>test</p>
+                </div>
+            </div>
+
+            <!-- Page for adding a recipe -->
+            <div id="addRecipePage">
+                <div>
+                    <form>
+                        Recipe Name:<br>
+                        <input type="text" id="recipeName" name="recipeName" placeholder="Recipe Name"><br><br>
+
+                        <input type="text" id="recipeSource" name="recipeName" placeholder="Website or recipe cookbook & page"><br><br>
+
+                        Description:<br>
+                        <textarea id="description" placeholder="Description"></textarea><br><br>
+
+                        <div id="course_selection">
+                            <input type="radio" id="main_course" name="course_type" value="main_course"> Main Course<br>
+                            <input type="radio" id="side_dish" name="course_type" value="side_dish"> Side Dish<br>
+                            <input type="radio" id="dessert" name="course_type" value="dessert"> Dessert<br><br>
+                        </div>
+
+                        Ingredients:<br>
+                        <div id="ingredients_div">
+                            <input type="text" id="ingredient_1" name="ingredient_1" placeholder="Ingredient 1">
+                        </div>
+
+                        <div> 
+                            <button type="button" id="addIngredient">Add Ingredient</button><br><br>
+                            <button type="button" id="removeIngredient">Remove Ingredient</button><br><br>
+                        </div>
+
+                        <br><br>
+
+                        Directions:<br>
+                        <textarea id="directions" placeholder="Directions"></textarea><br><br>
+                        
+                        Tags:<br>
+                        <textarea id="addRecipeTags" placeholder="Add tags separated with a space or a space and comma"></textarea><br><br>
+
+                        <div> 
+                            <button type ="button" id="submitRecipe">Submit</button><br><br>
+                            <button type="button" id="cancelRecipe">Cancel</button><br><br>
+                        </div>
+
+
+                      </form>
+                </div>
+            </div>
+
+        </main>
+
+        <footer>
+            
+        </footer>
+
+    </body>
+
+    <script src="index.js" type="module" defer></script>
+    
+    </body>
+</html>  
